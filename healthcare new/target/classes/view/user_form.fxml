@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.UserFormContrller">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="652.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+        <TableView fx:id="tblUserManagement" layoutX="-8.0" layoutY="294.0" prefHeight="306.0" prefWidth="660.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="155.0" text="User Id" />
+                <TableColumn fx:id="colName" prefWidth="232.0" text="User Name" />
+                <TableColumn fx:id="colPassword" prefWidth="155.0" text="password" />
+            <TableColumn fx:id="colEmployeeId" prefWidth="117.0" text="Employee Id" />
+            </columns>
+        </TableView>
+        <Label layoutX="214.0" layoutY="14.0" text="User Management">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtUserId" labelFloat="true" layoutX="41.0" layoutY="146.0" prefHeight="25.0" prefWidth="148.0" promptText="User Id" style="-fx-background-color: #ffffff;" />
+        <JFXTextField fx:id="txtName" labelFloat="true" layoutX="256.0" layoutY="146.0" prefHeight="25.0" prefWidth="148.0" promptText="User Name" style="-fx-background-color: #ffffff;" />
+        <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="467.0" layoutY="146.0" prefHeight="25.0" prefWidth="148.0" promptText="Password" style="-fx-background-color: #ffffff;" />
+        <JFXButton layoutX="516.0" layoutY="207.0" onAction="#btnUserDeleteOnAction" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #ED2B2A;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="400.0" layoutY="207.0" onAction="#btnUserUpdateOnAction" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #2bc016;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="285.0" layoutY="207.0" onAction="#btnUserSaveOnAction" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+      <JFXTextField fx:id="txtEmpId" labelFloat="true" layoutX="41.0" layoutY="210.0" prefHeight="25.0" prefWidth="148.0" promptText="Employee Id" style="-fx-background-color: #ffffff;" />
+      <JFXButton layoutX="524.0" layoutY="247.0" onAction="#btnUsprint" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: black;" text="print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.OrderFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="79.0" layoutY="473.0" stroke="BLACK" strokeType="INSIDE" width="750.0" />
+      <ImageView fitHeight="550.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="174.0" layoutY="14.0" prefHeight="39.0" prefWidth="78.0" text="Order">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="103.0" layoutY="139.0" onAction="#btnOrderSupOrderDetails" prefHeight="37.0" prefWidth="529.0" style="-fx-background-color: pink;" text="Supplies Order Details">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn" layoutX="103.0" layoutY="200.0" onAction="#btnOrderCusOrderDetails" prefHeight="37.0" prefWidth="529.0" style="-fx-background-color: pink;" text="Customer Order Details">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

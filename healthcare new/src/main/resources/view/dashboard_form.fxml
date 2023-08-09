@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashContext" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.DashboardFormController">
+   <children>
+      <Label layoutX="-8.0" layoutY="-3.0" prefHeight="43.0" prefWidth="910.0" style="-fx-background-color: blue;" />
+      <Label layoutY="40.0" prefHeight="566.0" prefWidth="189.0" style="-fx-background-color: #070A52;" />
+      <Label layoutX="360.0" layoutY="3.0" prefHeight="35.0" prefWidth="281.0" text="ROYAL CARE PHAMACY" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="46.0" layoutY="109.0" onAction="#empOnAction" style="-fx-background-color: #6E85B2;" text="Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="47.0" layoutY="170.0" onAction="#cusOnAction" style="-fx-background-color: #6E85B2;" text="Customer" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="47.0" layoutY="227.0" onAction="#orderOnAction" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #6E85B2;" text="Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="46.0" layoutY="288.0" onAction="#medicineOn" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #6E85B2;" text="Medicine" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="46.0" layoutY="350.0" onAction="#SupplierONAction" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #6E85B2;" text="Supplier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="47.0" layoutY="410.0" onAction="#payOnAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #6E85B2;" text="Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="home" layoutX="189.0" layoutY="40.0" prefHeight="566.0" prefWidth="712.0" />
+      <JFXButton layoutX="47.0" layoutY="471.0" onAction="#btnUserOnAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #6E85B2;" text="User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="46.0" layoutY="521.0" onAction="#btnArrivalOnAction" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #6E85B2;" text="Arrival" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="809.0" layoutY="4.0" onAction="#btnLogOutlOnAction" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #6E85B2;" styleClass="round_button" stylesheets="@../style/style.css" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

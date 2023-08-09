@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.SuppliesOrderDetailsFormController">
+   <children>
+      <ImageView fitHeight="566.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="179.0" layoutY="14.0" text="Supplies Order Details">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSupOrderDetailsSupId" labelFloat="true" layoutX="60.0" layoutY="110.0" prefHeight="30.0" prefWidth="112.0" promptText="Supplier Order Id" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupOrderDetailsTotal" labelFloat="true" layoutX="379.0" layoutY="161.0" prefHeight="30.0" prefWidth="157.0" promptText="Total" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSupOrderDetailsQuantity" editable="false" labelFloat="true" layoutX="541.0" layoutY="110.0" promptText="QTY ON HND" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddToCart" layoutX="375.0" layoutY="221.0" onAction="#btnAddToCartOnAction" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: blue;" text="Add To Cart" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="611.0" layoutY="221.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: red;" text="    Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="495.0" layoutY="221.0" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #2bc016;" text="   Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblCOD" layoutY="268.0" prefHeight="299.0" prefWidth="712.0">
+         <columns>
+            <TableColumn fx:id="colSODMedicineId" prefWidth="147.0" text="Medicine Id" />
+            <TableColumn fx:id="colSODQuantity" prefWidth="140.0" text="Quantity" />
+            <TableColumn fx:id="colSODTotal" prefWidth="167.0" text="Total" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="cmbMedicine" layoutX="191.0" layoutY="116.0" prefWidth="150.0" promptText="Select Medicine" />
+      <ComboBox fx:id="cmbSupplier" layoutX="382.0" layoutY="116.0" prefWidth="150.0" promptText="Select Supplier" />
+      <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="191.0" layoutY="161.0" prefHeight="30.0" prefWidth="157.0" promptText="QTY" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="599.0" layoutY="176.0" onAction="#btnSupOrderPrint" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: black;" text="print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

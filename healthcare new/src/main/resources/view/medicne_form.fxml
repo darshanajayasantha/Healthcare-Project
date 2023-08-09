@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.MedicineFormController">
+   <children>
+      <ImageView fitHeight="850.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="214.0" layoutY="14.0" prefHeight="45.0" prefWidth="218.0" text="Medicine Stock">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMedicineStock" layoutY="300.0" prefHeight="550.0" prefWidth="700.0">
+         <columns>
+            <TableColumn fx:id="colMedId" prefWidth="126.0" text="Meidicine Id" />
+            <TableColumn fx:id="colMedName" prefWidth="178.0" text="Medicine Name" />
+            <TableColumn fx:id="colMedType" prefWidth="215.0" text="Medicine Type" />
+            <TableColumn fx:id="colMedStock" prefWidth="180.0" text="Quantity On Stock" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="307.0" layoutY="231.0" onAction="#btnMedStockSaveOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="540.0" layoutY="230.0" onAction="#btnMedStockDelete" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: red;" text="    Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="432.0" layoutY="231.0" onAction="#btnMedStockUpdate" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #2bc016;" text="   Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="279.0" layoutY="117.0" onAction="#btnCusSearch" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #023047;" styleClass="roundButton" stylesheets="@../style/Dashboard.css" text="   Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtMedType" labelFloat="true" layoutX="53.0" layoutY="189.0" prefHeight="31.0" prefWidth="120.0" promptText="Medicine Type" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMedStock" labelFloat="true" layoutX="368.0" layoutY="189.0" prefHeight="31.0" prefWidth="246.0" promptText="Quantity On Stock" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMedName" labelFloat="true" layoutX="368.0" layoutY="117.0" prefHeight="31.0" prefWidth="246.0" promptText="Medicine Name" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMedId" labelFloat="true" layoutX="53.0" layoutY="116.0" prefHeight="31.0" prefWidth="218.0" promptText="Medicine Id" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMediPrice" labelFloat="true" layoutX="200.0" layoutY="189.0" prefHeight="31.0" prefWidth="120.0" promptText="Medicine Price" style="-fx-background-color: #ffffff;" />
+      <JFXButton layoutX="552.0" layoutY="270.0" onAction="#btnMeprint" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: black;" text="print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
